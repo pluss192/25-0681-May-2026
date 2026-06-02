@@ -1,26 +1,228 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Elite Web Agency | Modern Web Design & Development</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Web Agency</title>
+
+    <style>
+
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, sans-serif;
+        }
+
+        body{
+            background:#f4f4f4;
+            color:#333;
+        }
+
+        nav{
+            background:#0f172a;
+            padding:20px;
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+        }
+
+        nav h1{
+            color:white;
+        }
+
+        nav ul{
+            list-style:none;
+            display:flex;
+            gap:20px;
+        }
+
+        nav ul li a{
+            color:white;
+            text-decoration:none;
+        }
+
+        .hero{
+            background:linear-gradient(to right,#2563eb,#1e40af);
+            color:white;
+            text-align:center;
+            padding:100px 20px;
+        }
+
+        .hero h2{
+            font-size:40px;
+            margin-bottom:15px;
+        }
+
+        .hero p{
+            max-width:700px;
+            margin:auto;
+            line-height:1.6;
+        }
+
+        .btn{
+            display:inline-block;
+            margin-top:20px;
+            padding:12px 25px;
+            background:white;
+            color:#2563eb;
+            text-decoration:none;
+            border-radius:5px;
+            font-weight:bold;
+        }
+
+        .services{
+            padding:60px 30px;
+            text-align:center;
+        }
+
+        .cards{
+            display:flex;
+            justify-content:center;
+            gap:20px;
+            flex-wrap:wrap;
+            margin-top:30px;
+        }
+
+        .card{
+            background:white;
+            width:280px;
+            padding:25px;
+            border-radius:10px;
+            box-shadow:0 0 10px rgba(0,0,0,.1);
+        }
+
+        .portfolio{
+            padding:60px 30px;
+            text-align:center;
+        }
+
+        .gallery{
+            display:flex;
+            justify-content:center;
+            gap:15px;
+            flex-wrap:wrap;
+            margin-top:20px;
+        }
+
+        .gallery img{
+            width:250px;
+            height:180px;
+            object-fit:cover;
+            border-radius:10px;
+        }
+
+        .video-section{
+            padding:60px 20px;
+            text-align:center;
+            background:white;
+        }
+
+        iframe{
+            max-width:100%;
+            border-radius:10px;
+        }
+
+        .contact{
+            padding:60px 20px;
+            text-align:center;
+        }
+
+        footer{
+            background:#0f172a;
+            color:white;
+            text-align:center;
+            padding:20px;
+        }
+
+    </style>
 </head>
 <body>
-  <h1>Elite Web Agency</h1>
-  <h2>We Build Modern, Fast & Responsive Websites</h2>
-  <hr>
-  <p>
-    Welcome to Elite Web Agency. We specialize in creating modern websites for businesses,
-    startups, and personal brands that want a strong online presence.
-  </p>
-  <p>
-    Our services include web design, frontend development, UI/UX design, and responsive
-    website optimization for all devices.
-  </p>
-  <p>
-    We focus on clean design, fast performance, and user-friendly experiences that help
-    businesses grow online.
-  </p>
-  <p>
-    Contact us today to build your dream website and take your business to the next level.
-  </p>
+
+    <nav>
+        <h1>Nova Web Agency</h1>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <h2>Professional Web Design & Development</h2>
+
+        <p>
+            We create modern websites, ecommerce stores,
+            and digital experiences that help businesses
+            grow online.
+        </p>
+
+        <a href="#" class="btn">Get Started</a>
+    </section>
+
+    <section class="services">
+        <h2>Our Services</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Web Design</h3>
+                <p>Create beautiful and responsive websites.</p>
+            </div>
+
+            <div class="card">
+                <h3>Web Development</h3>
+                <p>Build fast and modern websites.</p>
+            </div>
+
+            <div class="card">
+                <h3>SEO Services</h3>
+                <p>Rank higher and get more customers.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="portfolio">
+        <h2>Our Projects</h2>
+
+        <div class="gallery">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3">
+            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6">
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c">
+        </div>
+    </section>
+
+    <section class="video-section">
+        <h2>Learn More About Web Development</h2>
+
+        <br>
+
+        <iframe
+            width="800"
+            height="450"
+            src="https://www.youtube.com/embed/UB1O30fR-EE"
+            title="YouTube video"
+            allowfullscreen>
+        </iframe>
+
+    </section>
+
+    <section class="contact">
+        <h2>Contact Us</h2>
+
+        <p>Email: info@novaagency.com</p>
+        <p>Phone: +254 700 000 000</p>
+        <p>Location: Nairobi, Kenya</p>
+    </section>
+
+    <footer>
+        <p>© 2026 Nova Web Agency. All Rights Reserved.</p>
+    </footer>
+
 </body>
 </html>
