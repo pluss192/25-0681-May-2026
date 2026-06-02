@@ -1,228 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nova Web Agency</title>
+    <title>Web Agency</title>
 
     <style>
-
-        *{
-            margin:0;
-            padding:0;
-            box-sizing:border-box;
-            font-family:Arial, sans-serif;
-        }
-
         body{
-            background:#f4f4f4;
-            color:#333;
+            font-family: Arial, sans-serif;
+            background-color:#f4f4f4;
+            margin:20px;
         }
 
-        nav{
-            background:#0f172a;
-            padding:20px;
-            display:flex;
-            justify-content:space-between;
-            align-items:center;
-        }
-
-        nav h1{
-            color:white;
-        }
-
-        nav ul{
-            list-style:none;
-            display:flex;
-            gap:20px;
-        }
-
-        nav ul li a{
-            color:white;
-            text-decoration:none;
-        }
-
-        .hero{
-            background:linear-gradient(to right,#2563eb,#1e40af);
-            color:white;
-            text-align:center;
-            padding:100px 20px;
-        }
-
-        .hero h2{
-            font-size:40px;
-            margin-bottom:15px;
-        }
-
-        .hero p{
-            max-width:700px;
-            margin:auto;
-            line-height:1.6;
-        }
-
-        .btn{
-            display:inline-block;
-            margin-top:20px;
-            padding:12px 25px;
-            background:white;
-            color:#2563eb;
-            text-decoration:none;
-            border-radius:5px;
-            font-weight:bold;
-        }
-
-        .services{
-            padding:60px 30px;
-            text-align:center;
-        }
-
-        .cards{
-            display:flex;
-            justify-content:center;
-            gap:20px;
-            flex-wrap:wrap;
-            margin-top:30px;
-        }
-
-        .card{
-            background:white;
-            width:280px;
-            padding:25px;
-            border-radius:10px;
-            box-shadow:0 0 10px rgba(0,0,0,.1);
-        }
-
-        .portfolio{
-            padding:60px 30px;
-            text-align:center;
-        }
-
-        .gallery{
-            display:flex;
-            justify-content:center;
-            gap:15px;
-            flex-wrap:wrap;
-            margin-top:20px;
+        h1{
+            color:navy;
         }
 
         .gallery img{
             width:250px;
-            height:180px;
-            object-fit:cover;
-            border-radius:10px;
+            height:150px;
         }
 
-        .video-section{
-            padding:60px 20px;
-            text-align:center;
-            background:white;
+        nav a{
+            margin-right:10px;
         }
 
         iframe{
-            max-width:100%;
-            border-radius:10px;
+            margin-top:20px;
         }
-
-        .contact{
-            padding:60px 20px;
-            text-align:center;
-        }
-
-        footer{
-            background:#0f172a;
-            color:white;
-            text-align:center;
-            padding:20px;
-        }
-
     </style>
 </head>
+
 <body>
 
-    <nav>
-        <h1>Nova Web Agency</h1>
+<h1>Web Agency</h1>
 
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+    <a href="#">Gallery</a>
+</nav>
 
-    <section class="hero">
-        <h2>Professional Web Design & Development</h2>
+<h2>The Purpose of this Website</h2>
 
-        <p>
-            We create modern websites, ecommerce stores,
-            and digital experiences that help businesses
-            grow online.
-        </p>
+<p>
+This website showcases our web agency services including
+website design, web development, SEO, and digital marketing.
+We help businesses create a strong online presence.
+</p>
 
-        <a href="#" class="btn">Get Started</a>
-    </section>
+<h2>Our Services</h2>
 
-    <section class="services">
-        <h2>Our Services</h2>
+<ul>
+    <li>Website Design</li>
+    <li>Website Development</li>
+    <li>E-commerce Stores</li>
+    <li>SEO Optimization</li>
+    <li>Digital Marketing</li>
+</ul>
 
-        <div class="cards">
+<h2>Steps to Work With Us</h2>
 
-            <div class="card">
-                <h3>Web Design</h3>
-                <p>Create beautiful and responsive websites.</p>
-            </div>
+<ol>
+    <li>Contact Us</li>
+    <li>Discuss Your Project</li>
+    <li>Design & Development</li>
+    <li>Testing</li>
+    <li>Launch Website</li>
+</ol>
 
-            <div class="card">
-                <h3>Web Development</h3>
-                <p>Build fast and modern websites.</p>
-            </div>
+<h2>Agency Images</h2>
 
-            <div class="card">
-                <h3>SEO Services</h3>
-                <p>Rank higher and get more customers.</p>
-            </div>
+<div class="gallery">
+    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" alt="coding">
+    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3" alt="team">
+</div>
 
-        </div>
-    </section>
+<h2>More Agency Images</h2>
 
-    <section class="portfolio">
-        <h2>Our Projects</h2>
+<div class="gallery">
+    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c">
+    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6">
+    <img src="https://images.unsplash.com/photo-1496171367470-9ed9a91ea931">
+</div>
 
-        <div class="gallery">
-            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
-            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3">
-            <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6">
-            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c">
-        </div>
-    </section>
+<h2>Watch Our Introduction Video</h2>
 
-    <section class="video-section">
-        <h2>Learn More About Web Development</h2>
+<iframe
+width="560"
+height="315"
+src="https://www.youtube.com/embed/UB1O30fR-EE"
+allowfullscreen>
+</iframe>
 
-        <br>
+<h2>Contact Information</h2>
 
-        <iframe
-            width="800"
-            height="450"
-            src="https://www.youtube.com/embed/UB1O30fR-EE"
-            title="YouTube video"
-            allowfullscreen>
-        </iframe>
-
-    </section>
-
-    <section class="contact">
-        <h2>Contact Us</h2>
-
-        <p>Email: info@novaagency.com</p>
-        <p>Phone: +254 700 000 000</p>
-        <p>Location: Nairobi, Kenya</p>
-    </section>
-
-    <footer>
-        <p>© 2026 Nova Web Agency. All Rights Reserved.</p>
-    </footer>
+<p>Email: info@webagency.com</p>
+<p>Phone: +254 700 000 000</p>
 
 </body>
 </html>
