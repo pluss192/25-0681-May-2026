@@ -1,102 +1,156 @@
+just use this css and html code dont go beyonf this its begginer code check it,add  tables and simple things necessary
+
+```html
 <!DOCTYPE html>
 <html>
 <head>
     <title>Web Agency</title>
 
     <style>
+
         body{
             font-family: Arial, sans-serif;
-            background-color:#f4f4f4;
-            margin:20px;
+            margin:0;
+            padding:20px;
+            background: linear-gradient(135deg,#0f172a,#1e3a8a,#2563eb);
+        }
+
+        .container{
+            background:white;
+            max-width:1200px;
+            margin:auto;
+            padding:25px;
+            border-radius:12px;
+            box-shadow:0 5px 20px rgba(0,0,0,0.3);
         }
 
         h1{
-            color:navy;
+            color:#1e3a8a;
         }
 
-        .gallery img{
-            width:250px;
-            height:150px;
+        h2{
+            color:#2563eb;
+        }
+
+        nav{
+            margin-bottom:20px;
         }
 
         nav a{
-            margin-right:10px;
+            text-decoration:none;
+            background:#2563eb;
+            color:white;
+            padding:8px 15px;
+            border-radius:5px;
+            margin-right:5px;
+        }
+
+        nav a:hover{
+            background:#1d4ed8;
+        }
+
+        .gallery img{
+            width:240px;
+            height:150px;
+            border-radius:8px;
+            margin:5px;
         }
 
         iframe{
-            margin-top:20px;
+            border-radius:10px;
+            margin-top:10px;
         }
+
+        footer{
+            text-align:center;
+            margin-top:20px;
+            color:#666;
+        }
+
     </style>
+
 </head>
 
 <body>
 
-<h1>Web Agency</h1>
+<div class="container">
 
-<nav>
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Contact</a>
-    <a href="#">Gallery</a>
-</nav>
+    <h1>Web Agency</h1>
 
-<h2>The Purpose of this Website</h2>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+        <a href="#">Gallery</a>
+    </nav>
 
-<p>
-This website showcases our web agency services including
-website design, web development, SEO, and digital marketing.
-We help businesses create a strong online presence.
-</p>
+    <h2>The Purpose of this Website</h2>
 
-<h2>Our Services</h2>
+    <p>
+        This website promotes our web agency services. We design modern websites,
+        create ecommerce stores, improve SEO rankings, and help businesses build
+        a strong online presence.
+    </p>
 
-<ul>
-    <li>Website Design</li>
-    <li>Website Development</li>
-    <li>E-commerce Stores</li>
-    <li>SEO Optimization</li>
-    <li>Digital Marketing</li>
-</ul>
+    <h2>Our Services</h2>
 
-<h2>Steps to Work With Us</h2>
+    <ul>
+        <li>Website Design</li>
+        <li>Website Development</li>
+        <li>E-Commerce Stores</li>
+        <li>SEO Optimization</li>
+        <li>Digital Marketing</li>
+    </ul>
 
-<ol>
-    <li>Contact Us</li>
-    <li>Discuss Your Project</li>
-    <li>Design & Development</li>
-    <li>Testing</li>
-    <li>Launch Website</li>
-</ol>
+    <h2>Steps to Work With Us</h2>
 
-<h2>Agency Images</h2>
+    <ol>
+        <li>Contact Our Agency</li>
+        <li>Discuss Your Requirements</li>
+        <li>Website Design</li>
+        <li>Development & Testing</li>
+        <li>Website Launch</li>
+    </ol>
 
-<div class="gallery">
-    <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" alt="coding">
-    <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3" alt="team">
+    <h2>Agency Images</h2>
+
+    <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" alt="Coding">
+        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3" alt="Team">
+    </div>
+
+    <h2>More Agency Projects</h2>
+
+    <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c" alt="">
+        <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6" alt="">
+        <img src="https://images.unsplash.com/photo-1496171367470-9ed9a91ea931" alt="">
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" alt="">
+    </div>
+
+    <h2>Introduction Video</h2>
+
+    <iframe
+        width="700"
+        height="400"
+        src="https://www.youtube.com/embed/UB1O30fR-EE"
+        title="Web Development Tutorial"
+        allowfullscreen>
+    </iframe>
+
+    <h2>Contact Information</h2>
+
+    <p><strong>Email:</strong> info@Pluscasewebagency.com</p>
+    <p><strong>Phone:</strong> +254 700 000 000</p>
+    <p><strong>Location:</strong> Nairobi, Kenya</p>
+
+    <footer>
+        <p>© 2026 Web Agency. All Rights Reserved.</p>
+    </footer>
+
 </div>
-
-<h2>More Agency Images</h2>
-
-<div class="gallery">
-    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c">
-    <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6">
-    <img src="https://images.unsplash.com/photo-1496171367470-9ed9a91ea931">
-</div>
-
-<h2>Watch Our Introduction Video</h2>
-
-<iframe
-width="560"
-height="315"
-src="https://www.youtube.com/embed/UB1O30fR-EE"
-allowfullscreen>
-</iframe>
-
-<h2>Contact Information</h2>
-
-<p>Email: info@Pluscasewebagency.com</p>
-<p>Phone: +254 700 000 000</p>
 
 </body>
 </html>
+```
