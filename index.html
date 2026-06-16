@@ -1,47 +1,185 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Web Agency</title>
-</head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pluscase Web Agency</title>
 
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f4f4f4;
+    line-height:1.6;
+}
+
+header{
+    background:#0d6efd;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+nav{
+    background:#222;
+    text-align:center;
+    padding:15px;
+    position:sticky;
+    top:0;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin:10px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#0d6efd;
+}
+
+section{
+    padding:40px;
+}
+
+.hero{
+    width:100%;
+    height:500px;
+    background:url('https://images.unsplash.com/photo-1460925895917-afdab827c52f') center/cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+    text-align:center;
+}
+
+.hero h1{
+    background:rgba(0,0,0,0.6);
+    padding:20px;
+    border-radius:10px;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:20px;
+    background:white;
+}
+
+table,th,td{
+    border:1px solid #ddd;
+}
+
+th{
+    background:#0d6efd;
+    color:white;
+}
+
+th,td{
+    padding:12px;
+    text-align:center;
+}
+
+.gallery{
+    display:flex;
+    flex-wrap:wrap;
+    gap:20px;
+    justify-content:center;
+}
+
+.gallery img{
+    width:300px;
+    height:200px;
+    object-fit:cover;
+    border-radius:10px;
+    transition:0.4s;
+}
+
+.gallery img:hover{
+    transform:scale(1.05);
+}
+
+.video-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:20px;
+}
+
+iframe{
+    border-radius:10px;
+}
+
+ul,ol{
+    margin-left:30px;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
+
+audio{
+    width:100%;
+    margin-top:20px;
+}
+</style>
+
+</head>
 <body>
 
-<h1 id="home">Web Agency</h1>
+<header id="home">
+    <h1>Web Agency</h1>
+    <p>Building Modern Websites for Businesses</p>
+</header>
 
-<!-- NAVIGATION -->
 <nav>
-    <a href="#home">Home</a> |
-    <a href="#about">About</a> |
-    <a href="#services">Services</a> |
-    <a href="#pricing">Pricing</a> |
-    <a href="#steps">Process</a> |
-    <a href="#timeline">Timeline</a> |
-    <a href="#gallery">Gallery</a> |
-    <a href="#video">Video</a> |
-    <a href="#team">Team</a> |
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#steps">Process</a>
+    <a href="#timeline">Timeline</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#video">Videos</a>
+    <a href="#team">Team</a>
     <a href="#contact">Contact</a>
 </nav>
 
-<hr>
+<div class="hero">
+    <h1>We Create Stunning Websites That Grow Businesses</h1>
+</div>
 
-<!-- AUDIO (WORKING ONLINE MUSIC) -->
+<section>
+
 <h2>Background Music</h2>
 
 <audio controls autoplay loop>
     <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
-    Your browser does not support audio.
 </audio>
 
-<!-- ABOUT -->
-<h2 id="about">The Purpose of this Website</h2>
-<p>
-This website promotes our web agency services. We design modern websites,
-create ecommerce stores, improve SEO rankings, and help businesses build
-a strong online presence.
-</p>
+</section>
 
-<!-- SERVICES -->
-<h2 id="services">Our Services</h2>
+<section id="about">
+<h2>About Us</h2>
+
+<p>
+We design professional websites, ecommerce stores,
+digital marketing campaigns, and SEO strategies that
+help businesses attract customers online.
+</p>
+</section>
+
+<section id="services">
+<h2>Our Services</h2>
 
 <ul>
     <li>Website Design</li>
@@ -49,125 +187,191 @@ a strong online presence.
     <li>E-Commerce Stores</li>
     <li>SEO Optimization</li>
     <li>Digital Marketing</li>
+    <li>Mobile App Development</li>
 </ul>
+</section>
 
-<!-- PRICING -->
-<h2 id="pricing">Pricing Plans</h2>
+<section id="pricing">
 
-<table border="1">
-    <tr>
-        <th>Plan</th>
-        <th>Price (KES)</th>
-        <th>Pages</th>
-        <th>SEO</th>
-        <th>Support</th>
-    </tr>
-    <tr>
-        <td>Basic</td>
-        <td>15,000</td>
-        <td>3 Pages</td>
-        <td>No</td>
-        <td>Email Only</td>
-    </tr>
-    <tr>
-        <td>Standard</td>
-        <td>35,000</td>
-        <td>7 Pages</td>
-        <td>Basic SEO</td>
-        <td>Email & Phone</td>
-    </tr>
-    <tr>
-        <td>Premium</td>
-        <td>70,000</td>
-        <td>Unlimited</td>
-        <td>Full SEO</td>
-        <td>24/7 Support</td>
-    </tr>
+<h2>Pricing Plans</h2>
+
+<table>
+<tr>
+<th>Plan</th>
+<th>Price (KES)</th>
+<th>Pages</th>
+<th>SEO</th>
+<th>Support</th>
+</tr>
+
+<tr>
+<td>Basic</td>
+<td>15,000</td>
+<td>3 Pages</td>
+<td>No</td>
+<td>Email Only</td>
+</tr>
+
+<tr>
+<td>Standard</td>
+<td>35,000</td>
+<td>7 Pages</td>
+<td>Basic SEO</td>
+<td>Email & Phone</td>
+</tr>
+
+<tr>
+<td>Premium</td>
+<td>70,000</td>
+<td>Unlimited</td>
+<td>Full SEO</td>
+<td>24/7 Support</td>
+</tr>
+
 </table>
+</section>
 
-<!-- PROCESS -->
-<h2 id="steps">Steps to Work With Us</h2>
+<section id="steps">
+
+<h2>Steps to Work With Us</h2>
 
 <ol>
-    <li>Contact Our Agency</li>
-    <li>Discuss Your Requirements</li>
-    <li>Website Design</li>
-    <li>Development & Testing</li>
-    <li>Website Launch</li>
+<li>Contact Our Agency</li>
+<li>Discuss Requirements</li>
+<li>Design Mockup</li>
+<li>Development & Testing</li>
+<li>Launch Website</li>
 </ol>
 
-<!-- TIMELINE -->
-<h2 id="timeline">Project Timeline</h2>
+</section>
 
-<table border="1">
-    <tr>
-        <th>Step</th>
-        <th>Task</th>
-        <th>Duration</th>
-    </tr>
-    <tr>
-        <td>1</td>
-        <td>Planning</td>
-        <td>1-2 Days</td>
-    </tr>
-    <tr>
-        <td>2</td>
-        <td>Design</td>
-        <td>3-5 Days</td>
-    </tr>
-    <tr>
-        <td>3</td>
-        <td>Development</td>
-        <td>7-14 Days</td>
-    </tr>
+<section id="timeline">
+
+<h2>Project Timeline</h2>
+
+<table>
+
+<tr>
+<th>Step</th>
+<th>Task</th>
+<th>Duration</th>
+</tr>
+
+<tr>
+<td>1</td>
+<td>Planning</td>
+<td>1-2 Days</td>
+</tr>
+
+<tr>
+<td>2</td>
+<td>Design</td>
+<td>3-5 Days</td>
+</tr>
+
+<tr>
+<td>3</td>
+<td>Development</td>
+<td>7-14 Days</td>
+</tr>
+
 </table>
 
-<!-- GALLERY -->
-<h2 id="gallery">Gallery</h2>
+</section>
 
-<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" width="250">
-<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3" width="250">
+<section id="gallery">
 
-<!-- VIDEO -->
-<h2 id="video">Video</h2>
+<h2>Our Work Gallery</h2>
 
-<iframe width="500" height="300"
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
+
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3">
+
+<img src="https://images.unsplash.com/photo-1551434678-e076c223a692">
+
+<img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d">
+
+<img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f">
+
+<img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4">
+
+</div>
+
+</section>
+
+<section id="video">
+
+<h2>Marketing & Web Design Videos</h2>
+
+<div class="video-container">
+
+<iframe width="350" height="220"
 src="https://www.youtube.com/embed/UB1O30fR-EE"
 allowfullscreen>
 </iframe>
 
-<!-- TEAM -->
-<h2 id="team">Our Team</h2>
+<iframe width="350" height="220"
+src="https://www.youtube.com/embed/PkZNo7MFNFg"
+allowfullscreen>
+</iframe>
 
-<table border="1">
-    <tr>
-        <th>Name</th>
-        <th>Role</th>
-        <th>Email</th>
-    </tr>
-    <tr>
-        <td>John Kamau</td>
-        <td>Developer</td>
-        <td>john@webagency.com</td>
-    </tr>
-    <tr>
-        <td>Amina Hassan</td>
-        <td>Designer</td>
-        <td>amina@webagency.com</td>
-    </tr>
+<iframe width="350" height="220"
+src="https://www.youtube.com/embed/zOjov-2OZ0E"
+allowfullscreen>
+</iframe>
+
+</div>
+
+</section>
+
+<section id="team">
+
+<h2>Our Team</h2>
+
+<table>
+
+<tr>
+<th>Name</th>
+<th>Role</th>
+<th>Email</th>
+</tr>
+
+<tr>
+<td>John Kamau</td>
+<td>Senior Developer</td>
+<td>john@webagency.com</td>
+</tr>
+
+<tr>
+<td>Amina Hassan</td>
+<td>UI/UX Designer</td>
+<td>amina@webagency.com</td>
+</tr>
+
+<tr>
+<td>David Otieno</td>
+<td>SEO Specialist</td>
+<td>david@webagency.com</td>
+</tr>
+
 </table>
 
-<!-- CONTACT -->
-<h2 id="contact">Contact</h2>
+</section>
 
-<p>Email: info@webagency.com</p>
-<p>Phone: +254 700 000 000</p>
-<p>Location: Nairobi, Kenya</p>
+<section id="contact">
 
-<hr>
+<h2>Contact Us</h2>
+
+<p><strong>Email:</strong> info@webagency.com</p>
+<p><strong>Phone:</strong> +254 700 000 000</p>
+<p><strong>Location:</strong> Nairobi, Kenya</p>
+
+</section>
 
 <footer>
-    © 2026 Web Agency. All Rights Reserved.
+<h3>© 2026 Web Agency. All Rights Reserved.</h3>
 </footer>
 
 </body>
