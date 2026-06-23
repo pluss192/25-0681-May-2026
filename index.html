@@ -17,11 +17,10 @@
 
 body{
     font-family:'Segoe UI',sans-serif;
-    background:#f5f7fa;
-    color:#333;
+    background:#f4f6f9;
 }
 
-/* HEADER */
+/* Header */
 header{
     background:linear-gradient(135deg,#0066ff,#00c6ff);
     color:white;
@@ -38,117 +37,93 @@ header p{
     margin-top:10px;
 }
 
-/* NAVIGATION */
+/* Navigation */
 nav{
     background:white;
-    display:flex;
-    justify-content:center;
-    flex-wrap:wrap;
-    gap:20px;
-    padding:18px;
-    box-shadow:0 2px 15px rgba(0,0,0,0.1);
+    text-align:center;
+    padding:15px;
+    box-shadow:0 2px 10px rgba(0,0,0,.1);
     position:sticky;
     top:0;
-    z-index:1000;
 }
 
 nav a{
     text-decoration:none;
     color:#333;
+    margin:15px;
     font-weight:bold;
-    transition:0.3s;
 }
 
 nav a:hover{
     color:#0066ff;
 }
 
-/* HERO */
+/* Hero */
 .hero{
-    height:85vh;
-    background:url("https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1600&q=80") center/cover;
+    height:80vh;
+    background:url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1500&q=80') center/cover;
     display:flex;
     justify-content:center;
     align-items:center;
 }
 
 .hero-content{
-    background:rgba(0,0,0,0.6);
+    background:rgba(0,0,0,.6);
     color:white;
-    text-align:center;
     padding:40px;
-    border-radius:15px;
-    max-width:700px;
+    border-radius:10px;
+    text-align:center;
 }
 
 .hero-content h2{
-    font-size:48px;
-    margin-bottom:20px;
-}
-
-.hero-content p{
-    font-size:20px;
-    margin-bottom:20px;
+    font-size:40px;
 }
 
 .btn{
     display:inline-block;
-    padding:14px 30px;
+    margin-top:20px;
     background:#00c6ff;
     color:white;
+    padding:12px 25px;
     text-decoration:none;
     border-radius:30px;
 }
 
-.btn:hover{
-    background:#0066ff;
-}
-
-/* SECTIONS */
+/* Sections */
 section{
-    padding:80px 10%;
+    padding:70px 10%;
 }
 
-section h2{
+h2{
     text-align:center;
-    margin-bottom:40px;
+    margin-bottom:30px;
     color:#0066ff;
-    font-size:38px;
 }
 
-/* SERVICES */
+/* Services */
 .services{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
+    gap:20px;
 }
 
 .card{
     background:white;
-    padding:30px;
-    border-radius:15px;
+    padding:25px;
     text-align:center;
-    box-shadow:0 5px 20px rgba(0,0,0,.1);
-    transition:0.4s;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
 }
 
 .card:hover{
     transform:translateY(-10px);
 }
 
-.card h3{
-    color:#0066ff;
-    margin-bottom:15px;
-}
-
-/* TABLES */
+/* Tables */
 table{
     width:100%;
     border-collapse:collapse;
     background:white;
-    border-radius:15px;
-    overflow:hidden;
-    box-shadow:0 5px 20px rgba(0,0,0,.1);
 }
 
 th{
@@ -157,12 +132,12 @@ th{
 }
 
 th,td{
-    padding:15px;
-    text-align:center;
     border:1px solid #ddd;
+    padding:12px;
+    text-align:center;
 }
 
-/* GALLERY */
+/* Gallery */
 .gallery{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
@@ -173,16 +148,10 @@ th,td{
     width:100%;
     height:250px;
     object-fit:cover;
-    border-radius:15px;
-    box-shadow:0 5px 15px rgba(0,0,0,.15);
-    transition:0.4s;
+    border-radius:10px;
 }
 
-.gallery img:hover{
-    transform:scale(1.05);
-}
-
-/* VIDEOS */
+/* Video */
 .video-grid{
     display:grid;
     grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
@@ -193,274 +162,337 @@ iframe{
     width:100%;
     height:250px;
     border:none;
-    border-radius:15px;
+    border-radius:10px;
 }
 
-/* TEAM */
-.team{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-    gap:25px;
-}
-
-.team-card{
+/* Form */
+form{
     background:white;
-    padding:25px;
-    text-align:center;
-    border-radius:15px;
-    box-shadow:0 5px 20px rgba(0,0,0,.1);
+    max-width:600px;
+    margin:auto;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
 }
 
-.team-card img{
-    width:120px;
-    height:120px;
-    border-radius:50%;
+input{
+    width:100%;
+    padding:12px;
     margin-bottom:15px;
 }
 
-/* CONTACT */
-.contact{
-    background:white;
-    padding:40px;
-    border-radius:15px;
-    text-align:center;
-    box-shadow:0 5px 20px rgba(0,0,0,.1);
+.gender{
+    margin:15px 0;
 }
 
-/* FOOTER */
+.gender input{
+    width:auto;
+}
+
+button{
+    background:#0066ff;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    cursor:pointer;
+}
+
+#message{
+    margin-top:15px;
+    font-weight:bold;
+    color:green;
+}
+
+/* Popup */
+.popup{
+    display:none;
+    position:fixed;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.7);
+    top:0;
+    left:0;
+}
+
+.popup-content{
+    background:white;
+    width:400px;
+    padding:30px;
+    text-align:center;
+    margin:150px auto;
+    border-radius:10px;
+}
+
+.close{
+    float:right;
+    font-size:25px;
+    cursor:pointer;
+}
+
+/* Footer */
 footer{
     background:#111827;
     color:white;
     text-align:center;
-    padding:30px;
-}
-
-/* MOBILE */
-@media(max-width:768px){
-    header h1{
-        font-size:40px;
-    }
-
-    .hero-content h2{
-        font-size:32px;
-    }
+    padding:25px;
 }
 
 </style>
+
 </head>
 
 <body>
 
-<header id="home">
-    <h1>Web Agency</h1>
-    <p>Professional Websites & Digital Marketing Solutions</p>
+<!-- POPUP -->
+<div id="popup" class="popup">
+
+<div class="popup-content">
+
+<span class="close" onclick="closePopup()">&times;</span>
+
+<h2>🎉 Special Offer</h2>
+
+<p>Get 20% OFF on Website Development Packages.</p>
+
+<button onclick="closePopup()">Claim Offer</button>
+
+</div>
+
+</div>
+
+<header>
+
+<h1>Web Agency</h1>
+
+<p>Professional Websites & Digital Marketing Solutions</p>
+
 </header>
 
 <nav>
-    <a href="#about">About</a>
-    <a href="#services">Services</a>
-    <a href="#pricing">Pricing</a>
-    <a href="#timeline">Timeline</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#video">Videos</a>
-    <a href="#team">Team</a>
-    <a href="#contact">Contact</a>
+
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#pricing">Pricing</a>
+<a href="#gallery">Gallery</a>
+<a href="#video">Videos</a>
+<a href="#contact">Contact</a>
+
 </nav>
 
 <div class="hero">
-    <div class="hero-content">
-        <h2>Transform Your Business Online</h2>
-        <p>We create modern websites, SEO strategies and digital marketing campaigns that help businesses grow.</p>
-        <a href="#contact" class="btn">Get Started</a>
-    </div>
+
+<div class="hero-content">
+
+<h2>Transform Your Business Online</h2>
+
+<p>We create stunning websites that help businesses grow.</p>
+
+<a href="#contact" class="btn">Get Started</a>
+
+</div>
+
 </div>
 
 <section id="about">
-    <h2>About Us</h2>
 
-    <audio controls>
-        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
-    </audio>
+<h2>About Us</h2>
 
-    <br><br>
+<p>
+We provide website design, web development,
+SEO optimization and digital marketing solutions.
+</p>
 
-    <p>
-        Our agency specializes in website development, ecommerce solutions,
-        search engine optimization, branding and digital marketing.
-        We help businesses establish a strong online presence.
-    </p>
 </section>
 
 <section id="services">
-    <h2>Our Services</h2>
 
-    <div class="services">
+<h2>Our Services</h2>
 
-        <div class="card">
-            <h3>Website Design</h3>
-            <p>Beautiful responsive websites.</p>
-        </div>
+<div class="services">
 
-        <div class="card">
-            <h3>Web Development</h3>
-            <p>Fast and secure applications.</p>
-        </div>
+<div class="card">
+<h3>Website Design</h3>
+<p>Modern responsive websites.</p>
+</div>
 
-        <div class="card">
-            <h3>E-Commerce</h3>
-            <p>Professional online stores.</p>
-        </div>
+<div class="card">
+<h3>Web Development</h3>
+<p>Fast and secure applications.</p>
+</div>
 
-        <div class="card">
-            <h3>SEO Optimization</h3>
-            <p>Improve Google rankings.</p>
-        </div>
+<div class="card">
+<h3>E-Commerce</h3>
+<p>Online stores for your business.</p>
+</div>
 
-        <div class="card">
-            <h3>Digital Marketing</h3>
-            <p>Reach more customers online.</p>
-        </div>
+<div class="card">
+<h3>SEO</h3>
+<p>Improve Google rankings.</p>
+</div>
 
-        <div class="card">
-            <h3>Mobile Apps</h3>
-            <p>Android and iOS solutions.</p>
-        </div>
+</div>
 
-    </div>
 </section>
 
 <section id="pricing">
-    <h2>Pricing Plans</h2>
 
-    <table>
-        <tr>
-            <th>Plan</th>
-            <th>Price (KES)</th>
-            <th>Pages</th>
-            <th>SEO</th>
-            <th>Support</th>
-        </tr>
+<h2>Pricing Plans</h2>
 
-        <tr>
-            <td>Basic</td>
-            <td>15,000</td>
-            <td>3 Pages</td>
-            <td>No</td>
-            <td>Email</td>
-        </tr>
+<table>
 
-        <tr>
-            <td>Standard</td>
-            <td>35,000</td>
-            <td>7 Pages</td>
-            <td>Basic SEO</td>
-            <td>Email & Phone</td>
-        </tr>
+<tr>
+<th>Plan</th>
+<th>Price</th>
+<th>Pages</th>
+</tr>
 
-        <tr>
-            <td>Premium</td>
-            <td>70,000</td>
-            <td>Unlimited</td>
-            <td>Full SEO</td>
-            <td>24/7 Support</td>
-        </tr>
-    </table>
-</section>
+<tr>
+<td>Basic</td>
+<td>KES 15,000</td>
+<td>3</td>
+</tr>
 
-<section id="timeline">
-    <h2>Project Timeline</h2>
+<tr>
+<td>Standard</td>
+<td>KES 35,000</td>
+<td>7</td>
+</tr>
 
-    <table>
-        <tr>
-            <th>Step</th>
-            <th>Task</th>
-            <th>Duration</th>
-        </tr>
+<tr>
+<td>Premium</td>
+<td>KES 70,000</td>
+<td>Unlimited</td>
+</tr>
 
-        <tr>
-            <td>1</td>
-            <td>Planning</td>
-            <td>1-2 Days</td>
-        </tr>
+</table>
 
-        <tr>
-            <td>2</td>
-            <td>Design</td>
-            <td>3-5 Days</td>
-        </tr>
-
-        <tr>
-            <td>3</td>
-            <td>Development</td>
-            <td>7-14 Days</td>
-        </tr>
-    </table>
 </section>
 
 <section id="gallery">
-    <h2>Our Projects</h2>
 
-    <div class="gallery">
-        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=800&q=80">
-        <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=800&q=80">
-        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=800&q=80">
-        <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=800&q=80">
-        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=800&q=80">
-        <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?auto=format&fit=crop&w=800&q=80">
-    </div>
+<h2>Gallery</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085">
+
+<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3">
+
+<img src="https://images.unsplash.com/photo-1551434678-e076c223a692">
+
+</div>
+
 </section>
 
 <section id="video">
-    <h2>Agency Videos</h2>
 
-    <div class="video-grid">
-        <iframe src="https://www.youtube.com/embed/UB1O30fR-EE" allowfullscreen></iframe>
+<h2>Videos</h2>
 
-        <iframe src="https://www.youtube.com/embed/PkZNo7MFNFg" allowfullscreen></iframe>
+<div class="video-grid">
 
-        <iframe src="https://www.youtube.com/embed/zOjov-2OZ0E" allowfullscreen></iframe>
-    </div>
-</section>
+<iframe src="https://www.youtube.com/embed/UB1O30fR-EE" allowfullscreen></iframe>
 
-<section id="team">
-    <h2>Meet Our Team</h2>
+<iframe src="https://www.youtube.com/embed/PkZNo7MFNFg" allowfullscreen></iframe>
 
-    <div class="team">
+</div>
 
-        <div class="team-card">
-            <img src="https://randomuser.me/api/portraits/men/32.jpg">
-            <h3>John Kamau</h3>
-            <p>Senior Developer</p>
-        </div>
-
-        <div class="team-card">
-            <img src="https://randomuser.me/api/portraits/women/44.jpg">
-            <h3>Amina Hassan</h3>
-            <p>UI/UX Designer</p>
-        </div>
-
-        <div class="team-card">
-            <img src="https://randomuser.me/api/portraits/men/75.jpg">
-            <h3>David Otieno</h3>
-            <p>SEO Specialist</p>
-        </div>
-
-    </div>
 </section>
 
 <section id="contact">
-    <h2>Contact Us</h2>
 
-    <div class="contact">
-        <p><strong>Email:</strong> info@webagency.com</p>
-        <p><strong>Phone:</strong> +254 700 000 000</p>
-        <p><strong>Location:</strong> Nairobi, Kenya</p>
-    </div>
+<h2>Contact Form</h2>
+
+<form id="contactForm">
+
+<label>Full Name</label>
+<input type="text" id="name">
+
+<label>Email</label>
+<input type="text" id="email">
+
+<label>Phone Number</label>
+<input type="text" id="phone">
+
+<label>Gender</label>
+
+<div class="gender">
+
+<input type="radio" name="gender" value="Male"> Male
+
+<input type="radio" name="gender" value="Female"> Female
+
+</div>
+
+<button type="submit">Submit</button>
+
+<p id="message"></p>
+
+</form>
+
 </section>
 
 <footer>
-    <h3>© 2026 Web Agency. All Rights Reserved.</h3>
+
+<p>© 2026 Web Agency. All Rights Reserved.</p>
+
 </footer>
+
+<script>
+
+// Popup
+window.onload = function(){
+    setTimeout(function(){
+        document.getElementById("popup").style.display="block";
+    },2000);
+};
+
+function closePopup(){
+    document.getElementById("popup").style.display="none";
+}
+
+// Form Validation
+document.getElementById("contactForm")
+.addEventListener("submit",function(event){
+
+event.preventDefault();
+
+let name=document.getElementById("name").value.trim();
+let email=document.getElementById("email").value.trim();
+let phone=document.getElementById("phone").value.trim();
+
+let gender=document.querySelector(
+'input[name="gender"]:checked'
+);
+
+let emailPattern=/^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+let phonePattern=/^[0-9]{10}$/;
+
+if(name===""){
+    alert("Please enter your name");
+    return;
+}
+
+if(!emailPattern.test(email)){
+    alert("Enter a valid email");
+    return;
+}
+
+if(!phonePattern.test(phone)){
+    alert("Phone number must be 10 digits");
+    return;
+}
+
+if(!gender){
+    alert("Please select gender");
+    return;
+}
+
+document.getElementById("message").innerHTML =
+"✅ Form submitted successfully!";
+
+});
+
+</script>
 
 </body>
 </html>
